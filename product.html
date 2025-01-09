@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products </title>
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Add Style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid fixed-top px-0 fs-5" data-wow-delay="0.1s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <img src="/img/logo.png" height="50px" alt="Smart Shopping" title="Home">
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active" title="Home">Home</a>
+                    <a href="about.html" class="nav-item nav-link" title="About Us">About Us</a>
+                    <a href="contact.html" class="nav-item nav-link" title="Contact Us">Contact Us</a>
+                    <a href="shopping-cart.html" class="nav-item nav-link" title="Shopping Cart">Shopping Cart</a>
+                    <a href="checkout.html" class="nav-item nav-link" title="Checkout">Checkout</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a class="btn ms-3" href="shopping-cart.html" title="Shopping Cart">
+                        <small class="fa fa-shopping-cart fs-5"></small>
+                        <span id="cart-count" class="badge bg-primary rounded-pill ms-1">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <!-- Products Start -->
+    <section class="products py-5 mt-5">
+        <div class="container">
+            <h2 class="mb-5 text-center">Our Products</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="/img/products/product1.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS ExpertBook B5 (B5405)</h5>
+                            <p class="card-text">Intel® Core™ Ultra processor with Intel vPro® and discrete NVIDIA®
+                                graphics</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">$999.99</small>
+                            <button class="btn btn-primary float-end"
+                                onclick="addToCart('ASUS ExpertBook B5 (B5405)', 999.99)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="/img/products/product2.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS Zenbook 14X OLED (UX3404)</h5>
+                            <p class="card-text">13th Gen Intel® Core™ H-Series CPUs with 32 GB of fast LPDDR5 memory
+                                and a 1 TB PCIe® 4.0 SSD. There’s also a bigger 14.5-inch 16:10 2.8K 120 Hz OLED HDR
+                                NanoEdge display1, NVIDIA® GeForce RTX™ 3050 graphics, and a longer-lasting 70 Wh
+                                battery. Zenbook 14X OLED delivers more — in every way!</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">$1499.99</small>
+                            <button class="btn btn-primary float-end"
+                                onclick="addToCart('ASUS Zenbook 14X OLED (UX3404)', 1499.99)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="/img/products/product3.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">ProArt P16 (H7606)</h5>
+                            <p class="card-text">GeForce RTX™ 40 Series Laptop GPU, providing powerful graphics and 321
+                                TOPS AI performance. Additionally, it features up to a 50 TOPS AMD Ryzen™ AI 9 HX 370
+                                processor</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">$2199</small>
+                            <button class="btn btn-primary float-end" onclick="addToCart('ProArt P16', 2199)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="/img/products/product4.jpg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">MacBook Air 15-inch with M3 chip</h5>
+                            <p class="card-text">8-Core CPU
+                                10-Core GPU
+                                16GB Unified Memory
+                                256GB SSD Storage footnote ¹</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">$1499.99</small>
+                            <button class="btn btn-primary float-end"
+                                onclick="addToCart('MacBook Air 15-inch with M3 chip',  1499.99)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="/img/products/product5.jpg" class="card-img-top" alt="Product 5">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS Vivobook S 14 OLED (K5404)</h5>
+                            <p class="card-text">Intel® Core™ i5-13500H Processor 2.6 GHz (18MB Cache, up to 4.7 GHz, 12
+                                cores, 16 Threads)</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">$599.99</small>
+                            <button class="btn btn-primary float-end"
+                                onclick="addToCart('ASUS Vivobook S 14 OLED (K5404)', 599.99)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="/img/products/product6.jpg" class="card-img-top" alt="Product 6">
+                        <div class="card-body">
+                            <h5 class="card-title">ROG Zephyrus G16 (2025) GA605</h5>
+                            <p class="card-text">AMD Ryzen™ AI 7 350 Processor 2.0GHz (24MB Cache, up to 5.0GHz, 8
+                                cores, 16 Threads); AMD XDNA™ NPU up to 50TOPS</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">$2599.99</small>
+                            <button class="btn btn-primary float-end"
+                                onclick="addToCart('ROG Zephyrus G16 (2025) GA605', 2599.99)">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark text-light mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-4 text-danger">About Us</h5>
+                    <p class="text-white">We are a leading eCommerce company providing top-quality products and services
+                        to our valued customers.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-4 text-danger">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="product.html" class="text-white">Products</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li><a href="shopping-cart.html" class="text-white">Shopping Cart</a></li>
+                        <li><a href="checkout.html" class="text-white">Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-4 text-danger">Contact Us</h5>
+                    <p class="text-white"><i class="fa fa-map-marker-alt me-2"></i>167 Street, Phnom Penh, Cambodia</p>
+                    <p class="text-white"><i class="fa fa-phone-alt me-2"></i>+885 966 454 437</p>
+                    <p class="text-white"><i class="fa fa-envelope me-2"></i>envichika@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-4 text-danger">Follow Us</h5>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-outline-light btn-social m-1"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-social m-1"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-social m-1"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-social m-1"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-light border-top py-4">
+            <div class="container text-center">
+                <p class="mb-0">&copy; <a class="text-white" href="#">En Vichika</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="/js/cart.js"></script>
+</body>
+
+</html>
